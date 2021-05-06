@@ -25,7 +25,7 @@ public class User{
 					long c=Long.parseLong(m.GetDetails(a,"Ammount"));
 					c=c+b;
 					m.PutDetails(m.GetDetails(a,"AccountNumber"),m.GetDetails(a,"FName"),m.GetDetails(a,"MName"),m.GetDetails(a,"LName"),String.valueOf(c),m.GetDetails(a,"Address"),m.GetDetails(a,"Birth Date"),m.GetDetails(a,"Email"),m.GetDetails(a,"Gender"),m.GetDetails(a,"PhoneNumber"),m.GetDetails(a,"Password"));
-					System.out.println("\n\t\t     $ " + c + " Debited.\n");
+					System.out.println("\n\t\t     $ " + c + " Credited.\n");
 					break;
 				case 2:
 					long w=Long.parseLong(m.GetDetails(a,"Ammount"));
@@ -42,7 +42,7 @@ public class User{
 					}while(b > w);
 					w=w-b;
 					m.PutDetails(m.GetDetails(a,"AccountNumber"),m.GetDetails(a,"FName"),m.GetDetails(a,"MName"),m.GetDetails(a,"LName"),String.valueOf(w),m.GetDetails(a,"Address"),m.GetDetails(a,"Birth Date"),m.GetDetails(a,"Email"),m.GetDetails(a,"Gender"),m.GetDetails(a,"PhoneNumber"),m.GetDetails(a,"Password"));
-					System.out.println("\n\t\t     $ " + w + " Debited.\n");
+					System.out.println("\n\t\t     $ " + b + " Debited.\n");
 					break;
 				case 3:
 					System.out.println("\n\t\t     --------------------------------------------------------------------------------------\n");
